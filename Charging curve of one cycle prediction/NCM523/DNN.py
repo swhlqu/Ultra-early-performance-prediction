@@ -47,8 +47,8 @@ class Dataset_generation(Dataset):
 
         train_set = TensorDataset(torch.from_numpy(self.x_train).to(torch.float32),
                                   torch.from_numpy(self.y_train).to(torch.float32))
-        valid_set = TensorDataset(torch.from_numpy(self.x_test).to(torch.float32),
-                                  torch.from_numpy(self.y_test).to(torch.float32))
+        valid_set = TensorDataset(torch.from_numpy(self.x_valid).to(torch.float32),
+                                  torch.from_numpy(self.y_valid).to(torch.float32))
         test_set = TensorDataset(torch.from_numpy(self.x_test).to(torch.float32),
                                  torch.from_numpy(self.y_test).to(torch.float32))
 
