@@ -5,6 +5,7 @@ The simulated dataset using COMSOL is available on COMSOL_DATASET.
 Note: The P2D model using COMSOL is available from the corresponding authors upon request.
 Overview
 DNN and Attention is a propoed general framework which can predict the charging curves over full life cycles of NCM523 and NCM811 batteries in the case of only knowing the charge protocols.
+
 System Requirements
 Hardware requirements
 DNN and Attention requires only a standard computer with enough RAM to support the in-memory operations.
@@ -26,3 +27,6 @@ warnings
 os
 math
 pathlib 
+
+The NCM523 and NCM811 fold includes the actual charging data.
+
