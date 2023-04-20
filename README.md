@@ -40,6 +40,9 @@ os
 math
 pathlib 
 
+### Training, Validation, and Test set generation
+It can be found in the main text of "Ultra-early prediction of lithium-ion battery performance using mechanism and data-driven fusion model"
+
 ## Contact
 
 If you have any questions, you can reach the author at the following e-mail: cydu@hit.edu.cn
