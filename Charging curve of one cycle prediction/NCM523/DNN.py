@@ -177,7 +177,7 @@ class Exp():
         self.learning_rate = 0.01
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model = MyModel().to(self.device)
-        self.checkpoints_path = './checkpoint/NCM523/DNN'
+        self.checkpoints_path = './checkpoint/NCM523/'
 
     def _select_optimizer(self):
         model_optim = optim.Adam(self.model.parameters(), lr=self.learning_rate)
