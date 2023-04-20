@@ -41,7 +41,7 @@ math
 pathlib 
 
 ### Training, Validation, and Test set generation
-It can be found in the main text of "Ultra-early prediction of lithium-ion battery performance using mechanism and data-driven fusion model" The training, validation, and test set in each scenario can be found in each scenario fold. 
+The dataset divided method can be found in the main text of "Ultra-early prediction of lithium-ion battery performance using mechanism and data-driven fusion model" The training, validation, and test set in each scenario can be found in each scenario fold. 
 
 ### The method of Reproduction code
 
@@ -49,14 +49,13 @@ The proposed method has been demonstrated in the scenarios of Charging curve of 
 
 In the scenario of Charging curve of one cycle prediction and Micro-ISC detection, only the proposed DNN is used to achieve the prediction performance.
 
-In the scenario of Degradation pattern identification under different working conditions and Degradation pattern identification under different working conditions and temperatures, the proposed DNN and attention model are used to achieve the prediction performance.
+In the scenario of Degradation pattern identification under different working conditions and Degradation pattern identification under different working conditions and temperatures, the proposed DNN and attention model are used to achieve the prediction performance. The attention model is used first to obtain the predicted results, then the proposed DNN is utilized to achieve accurate prediction performance.
 
 The best model parameters trained by us are shown in the checkpoint folder in each scenario.
 
 The prediction results can also be found in these folds. The "test_preds.csv" refers to the predicted results of the proposed DNN in the scenario of Charging curve of one cycle prediction and Micro-ISC detection. In the scenario of Degradation pattern identification under different working conditions and Degradation pattern identification under different working conditions and temperatures, the "test_preds.csv" refers to the predicted results of the attention model, and the "test_preds_second.csv" is the predicted results of the proposed DNN.
 
 In the scenario of Micro-ISC detection, the ISC folder includes the predicted results, named "pred_XXCC_XXCD.xlsx", and the actual ISC test dataset paralleled ISC resistance, named "51_point_ISC_523 or 811_CS_XXCC_XXCD_XXohm.csv". Through the error of the ISC test dataset and predicted dataset, the ISC can be detected
-
 
 ### License Information
 
